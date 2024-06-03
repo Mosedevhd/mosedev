@@ -1,0 +1,161 @@
+
+
+:root {
+    font-size: 16px;
+}
+
+/*  FORNATAÇÃO DE FOTOS*/
+.image h3{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+}
+.image p{
+    text-indent: 25px;
+}
+div.image{
+    width: 1100px;
+    margin: 80px;
+    height: auto;
+    
+}
+ul#album-foto{
+    width: 700px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: hidden;
+    list-style: none;
+}
+ul#album-foto li{
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 2px solid rgba(253, 252, 252, .0);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+    transition: all .4s ease-in;
+}
+ul#album-foto li span{
+    opacity: 0;
+    text-shadow: 1px 1px 1px #000000;
+    background-color: rgba(0, 0, 0, .3);
+    font-size: 13pt;
+    line-height: 360px;
+    padding: 2px;
+}
+ul#album-foto li:hover{
+    transform: scale(1.5);
+}
+
+ul#album-foto li:hover span{
+    opacity: 1;
+    color: #fff;
+}
+ul#album-foto li#foto01{
+    background: url("../imagem/LUIVY.png") no-repeat;
+    background-position: 50% 50%;
+    background-size: 350px 450px; 
+}
+ul#album-foto li#foto01:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-foto li#foto02{
+    background: url("../imagem/WhatsApp\ Image\ 2024-05-05\ at\ 16.45-fococlipping-standard.png") no-repeat;
+    background-position: 50% 50%;
+    background-size: 432px 432px;
+}
+ul#album-foto li#foto02:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-foto li#foto03{
+    background: url("../imagem/henrique-fococlipping-standard.png") no-repeat;
+    background-position: 50% 50%;
+    background-size: 350px 350px;
+}
+ul#album-foto li#foto03:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-foto li#foto04{
+    background: url("../imagem/dorivaldo-transformed.png") no-repeat;
+    background-position: 50% 50%;
+    background-size: 250px 250px;
+}ul#album-foto li#foto04:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-foto li#foto05{
+    background: url("../imagem/luis-fococlipping-standard.png") no-repeat;
+    background-position: 50% 50%;
+    background-size: 300px 300px;
+}
+ul#album-foto li#foto05:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+/* A escrita por si... */ 
+.txt-animado {
+    font-size: 20px;
+    font-weight: 300;
+ }
+
+ .txt-animado span {
+     position: relative;
+ }
+
+ .txt-animado span::before {
+     content: "";
+     color: rgb(245, 249, 252);
+     animation: palavras 20s infinite;
+ }
+ .txt-animado span::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    border-left: 2px solid #0f74e7ee;
+    right: -10px;
+    animation: cursor .8s infinite, digita 20s steps(14) infinite;
+    width: calc(100% + 15px);
+    background-color: #310351;; /*tenho que ajustar a cor pra apagar o texto */
+
+ }
+ @keyframes digita {
+       10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+           width: 0;
+       }
+       5%,20%,25%,40%,45%,60%,65%,80%,85%{
+           width: calc(100% + 15px);
+       }
+ }
+
+ @keyframes cursor {
+   0%{
+       border-left: 2px solid #310351;; /*Aqui tmbém tenho que ajustar a cor pra apagar o texto */
+   }
+   
+ }
+
+ @keyframes palavras {
+     0%,20%{
+       content: "Basta passar o mouse na foto para ampliar...";
+     }
+     21%,40%{
+       content: "KINAVUIDE DAVID é o CO-FUNDADOR e CEO da Mosedev...";
+     }
+     41%,60%{
+        content: "JOSEMAR TITO é o CO-EDITOR da MOSEDEV...";
+     }
+     61%,80%{
+       content: "DORIVALDO QUIZEMBE, função: Front-End ...";
+     }
+     81%,100%{
+        content: "HENRIQUES CIDADA, função: Front-End e LUIS Manuel função:Operador de Redes  ...";
+     }
+   
+ }
+
+

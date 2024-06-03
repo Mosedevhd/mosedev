@@ -1,0 +1,169 @@
+
+  body {
+    background-color:  #055786cb;
+} 
+
+:root {
+    font-size: 16px;
+}
+/*  Conf da interface ( Topo e corpo ) */
+#interface {
+    background-image: url(./imagem/Design\ sem\ nome.png);
+    background-position: center;
+    background-size: cover;
+    margin: -15px 0px;
+    padding: 10px;
+    height: 100vh;
+   
+}
+
+/*  Configuração do topo */
+.topo {
+    position: fixed;
+    width: 100%;
+    background-color: #5f5e5ea1;
+    margin: -15px -10px ; 
+    padding: 18px;
+    height: 120px;
+    font-size: 1rem;
+    border-bottom: 1px solid;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.849);
+    background-image: url(./imagem/fundo2.png);
+    background-repeat: no-repeat;
+    background-size: 210px;  
+    
+}
+
+
+/* Conf. do corpo  */
+div#corpo {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    padding: 2px;
+    width: 900px;
+    margin: 300px auto -50px 10px;
+    height: auto;
+  /*  background-color: #fff; */
+  
+   
+}
+
+  /* Conf. do menu */
+  nav#menu {
+     display: block;
+        
+  }
+  .menu a {
+     text-decoration: none;
+     color: rgba(94, 176, 243, 0.877);
+     
+  }
+  nav.menu ul {
+      list-style: none;
+      text-transform: uppercase;
+      position: relative;
+      bottom: -20px;
+      left: 150px;
+      
+  }
+
+  nav.menu li {
+    display: inline-block;
+    background-color: rgba(120, 120, 124, 0.904); 
+    padding: 10px;
+    margin: 15px;
+    transition: background 1s;
+    
+  }
+  nav.menu li:hover {
+    background-color: #370351;
+  }
+  nav.menu a:hover {
+     color: #d30b97fb;
+  }
+  article#fotog{
+    width: auto;
+    margin:auto ;
+  }
+ 
+  article#texto {
+     width: 700px;
+    padding-left: 10px;
+     margin: 5px 10px auto 100px;
+     height: auto;
+     color: #fff;
+     font-size: 2rem;
+  /*  background-color: #e70f0f; */
+  }
+ /* A escrita por si... */ 
+  .txt-animado {
+     font-size: 25px;
+     font-weight: 300;
+  }
+
+  .txt-animado span {
+      position: relative;
+  }
+
+  .txt-animado span::before {
+      content: "";
+      color: rgb(158, 203, 240);
+      animation: palavras 20s infinite;
+  }
+  .txt-animado span::after {
+     content: "";
+     position: absolute;
+     height: 100%;
+     border-left: 2px solid #0f74e7ee;
+     right: -10px;
+     animation: cursor .8s infinite, digita 20s steps(14) infinite;
+     width: calc(100% + 15px);
+     background-color: #370351; /*tenho que ajustar a cor pra apagar o texto */
+
+  }
+  @keyframes digita {
+        10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+            width: 0;
+        }
+        5%,20%,25%,40%,45%,60%,65%,80%,85%{
+            width: calc(100% + 15px);
+        }
+  }
+
+  @keyframes cursor {
+    0%{
+        border-left: 2px solid #370351; /*Aqui tmbém tenho que ajustar a cor pra apagar o texto */
+    }
+    
+  }
+
+  @keyframes palavras {
+      0%,20%{
+        content: "Oi, seja bem vindo ao serviço da Mosedev...";
+      }
+      21%,40%{
+        content: "Aqui transformamos ideias em realidade...";
+      }
+      41%,60%{
+         content: "Com excelentes programadores Back-End e Front-End";
+      }
+      61%,80%{
+        content: "KINAVUIDE é o CO-FUNDADOR e CEO da Mosedev...";
+      }
+      81%,100%{
+         content: "Acessa ao menu para mais informação...";
+      }
+    
+  }
+  /* Conf. do footer */ 
+footer{
+    color: rgba(236, 230, 230, 0.918);
+    text-align: center;
+    font-style: italic;
+  }
+
+
+
+
